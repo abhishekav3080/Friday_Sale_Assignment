@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Friday Sale</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-title {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: brown;
+            margin-top: 1px;
+        }
+
+        .add-to-cart-button {
+            background-color: lightgreen;
+            color: white;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            height: 21vh;
+            width: 36vw;
+            margin: 5px 5px;
+            font-size: 1.2em;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: green;
+        }
+
+        .info-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        .free-shipping {
+            color: green;
+            font-size: medium;
+        }
+
+        .total-price {
+            font-weight: bold;
+            margin-left: 80px;
+            font-size: medium;
+            
+        }
+
+        footer {
+            margin-top: 0px;
+            text-align: end;
+            font-style: italic;
+            font-size: small;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-title">Black Friday Sale</div>
+    <div class="box" id="box1">
+        <input type="checkbox" class="circle-checkbox">
+        <div class="text-content">
+            <div class="pair">1 Pair</div>
+            <div class="price">DKK 195.00</div>
+            <div class="discount">50% OFF</div>
+        </div>
+        <div class="dropdowns">
+            <div class="dropdown">
+                <label for="color1">Color:</label>
+                <select id="color1" class="color-dropdown">
+                    <option value="lightgray">Select Color</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="size1">Size:</label>
+                <select id="size1" class="size-dropdown">
+                    <option value="small">Select Size</option>
+                    <option value="small">Small</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="box popular" id="box2">
+        <input type="checkbox" class="circle-checkbox">
+        <div class="text-content">
+            <div class="pair">2 Pair</div>
+            <div class="price">DKK 345.00</div>
+            <div class="popular-badge">Most Popular</div>
+            <div class="discount">40% OFF</div>
+        </div>
+        <div class="dropdowns">
+            <div class="dropdown">
+                <label for="color2">Color:</label>
+                <select id="color2" class="color-dropdown">
+                    <option value="lightgray">Select Color</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="size2">Size:</label>
+                <select id="size2" class="size-dropdown">
+                    <option value="small">Select Size</option>
+                    <option value="small">Small</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="box" id="box3">
+        <input type="checkbox" class="circle-checkbox">
+        <div class="text-content">
+            <div class="pair">3 Pair</div>
+            <div class="price">DKK 528.00</div>
+            <div class="discount">60% OFF</div>
+        </div>
+        <div class="dropdowns">
+            <div class="dropdown">
+                <label for="color3">Color:</label>
+                <select id="color3" class="color-dropdown">
+                    <option value="lightgray">Select Color</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="size3">Size:</label>
+                <select id="size3" class="size-dropdown">
+                    <option value="small">Select Size</option>
+                    <option value="small">Small</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="info-container">
+        <div class="free-shipping">Free 2 Day Shipping</div>
+        <div class="total-price">Total: DKK 360.00</div>
+    </div>
+    <button id="addToCartButton" class="add-to-cart-button">+ Add to Cart</button>
+
+    <footer>
+        <p>&copy; Powered by Pumper</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
